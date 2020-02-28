@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("bg-image.jpg");
+  background-size: 100vw;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+  color: #e64515;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 80px;
+  font-family: Garamond;
+  background-color: rgba(16, 16, 16, 0.5);
+}
+
+#instructions {
+  color: #e64515;
+  margin-bottom: 20px;
+  background-color: black;
+  width: 50%;
+  border-radius: 5px;
+  margin-left: 25%;
+  padding: 10px;
+  border-color: 2px solid #e64515;
+}
+
+h3 {
+  text-align: center;
+}
+
+#crystal-sage {
+  position: relative;
+}
+
+#crystal-sage-img {
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.top-right {
+  color: #e64515;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-color: #101010;
+  padding: 2px;
+}
+
+.score {
+  background-color: #101010;
+  color: #e64515;
+  font-size: 30px;
+  position: relative;
+  float: left;
+  width: 450px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.sorceries {
+  float: left;
+  width: 20%;
+  margin-left: 50px;
+}
+
+.img-crystal {
+  margin: 10px;
+}

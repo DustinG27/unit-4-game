@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=EB+Garamond"
+    />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>Crystal Game</title>
+  </head>
+  <body>
+    <h1>Defeat the Crystal Sage</h1>
+
+    <!--instructions for the game and main container for all elements-->
+
+    <div id="instructions">
+      <h3>You have entered the fog door, ashen one.</h3>
+      <br />
+      <p>
+        You have four sorcories to use. By clicking each sorcery you will add a
+        specific amount of damage to your total score.
+      </p>
+      <br />
+      <p>
+        You defeat the Crystal Sage by matching your total damage with his total
+        health. You will be defeated if your damage goes above his health.
+      </p>
+      <br />
+      <p>
+        The value of each sorcery is hidden from you until you click on it.
+      </p>
+      <br />
+      <p>
+        Each time the game starts, the game will change the values of each
+        crystal.
+      </p>
+    </div>
+
+    <!--main image and score board-->
+
+    <div id="crystal-sage">
+      <img
+        src="assets/images/crystalSage.jpg"
+        alt="Crystal Sage"
+        id="crystal-sage-img"
+      />
+
+      <div class="top-right">
+        <h3 id="health">Health:</h3>
+      </div>
+    </div>
+
+    <!--game scoring-->
+
+    <div class="score">
+      <p id="total-damage">Damage:</p>
+      <p id="you-died">You died:</p>
+      <p id="you-win">Heir of Fire Destroyed:</p>
+    </div>
+
+    <!--crystals and total crystal count-->
+
+    <div class="sorceries">
+      <div id="crystals">
+        <img
+          src="assets/images/crystalSoulmass.png"
+          alt="soul-mass"
+          class="img-crystal soul"
+        />
+        <img
+          src="assets/images/crystalSoulSpear.png"
+          alt="soul-spear"
+          class="img-crystal spear"
+        />
+        <img
+          src="assets/images/crystalWeapon.png"
+          alt="crystal-weapon"
+          class="img-crystal weapon"
+        />
+        <img
+          src="assets/images/whiteDragonBreath.png"
+          alt="white-dragon-breath"
+          class="img-crystal breath"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="assets/javascript/game.js"></script>
+</html>
