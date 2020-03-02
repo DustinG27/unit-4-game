@@ -28,26 +28,26 @@ $(document).ready(function() {
   // reset fucntiopn for the game
 
   function reset() {
-     random = Math.floor(Math.random() * 101 + 19);
-     $("#health").text("Health: " + random);
-     crystal1 = Math.floor(Math.random() * 12 + 1);
-     crystal2 = Math.floor(Math.random() * 12 + 1);
-     crystal3 = Math.floor(Math.random() * 12 + 1);
-     crystal4 = Math.floor(Math.random() * 12 + 1);
-     $("#total-damage").text("Damage: " + damage);
-     damage = 0;
+    damage = 0;
+    random = Math.floor(Math.random() * 101 + 19);
+    $("#health").text("Health: " + random);
+    crystal1 = Math.floor(Math.random() * 12 + 1);
+    crystal2 = Math.floor(Math.random() * 12 + 1);
+    crystal3 = Math.floor(Math.random() * 12 + 1);
+    crystal4 = Math.floor(Math.random() * 12 + 1);
+    $("#total-damage").text("Damage: " + damage);
   }
 
   function destroyed() {
-      loses++;
-      $("#you-died").text("You died: " + loses);
-      reset();
-  };
+    loses++;
+    $("#you-died").text("You died: " + loses);
+    reset();
+  }
 
   function embered() {
-      wins++;
-      $("#you-win").text("Heir of Fire Destroyed: " + wins);
-      reset();
+    wins++;
+    $("#you-win").text("Heir of Fire Destroyed: " + wins);
+    reset();
   }
 
   // functioning clickable crystals that add to the respective score
@@ -56,9 +56,9 @@ $(document).ready(function() {
     damage = damage + crystal1;
     $("#total-damage").text("Damage: " + damage);
     if (damage === random) {
-        embered();
+      embered();
     } else if (damage > random) {
-        destroyed();
+      destroyed();
     }
   });
 
@@ -66,9 +66,9 @@ $(document).ready(function() {
     damage = damage + crystal2;
     $("#total-damage").text("Damage: " + damage);
     if (damage === random) {
-        embered();
+      embered();
     } else if (damage > random) {
-        destroyed();
+      destroyed();
     }
   });
 
@@ -76,9 +76,9 @@ $(document).ready(function() {
     damage = damage + crystal3;
     $("#total-damage").text("Damage: " + damage);
     if (damage === random) {
-        embered();
+      embered();
     } else if (damage > random) {
-        destroyed();
+      destroyed();
     }
   });
 
@@ -86,9 +86,9 @@ $(document).ready(function() {
     damage = damage + crystal4;
     $("#total-damage").text("Damage: " + damage);
     if (damage === random) {
-        embered();
+      embered();
     } else if (damage > random) {
-        destroyed();
+      destroyed();
     }
   });
 });
